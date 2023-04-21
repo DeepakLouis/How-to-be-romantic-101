@@ -10,38 +10,37 @@
             height: 100%;
         }
         .love {
-            background-image: url(images/love.jpeg);
+            background-image: url(images/love.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             height: 100%;
+            display: flex;
+            font-family: "Open Sans", sans-serif;
+            justify-content: center;
+            font-weight: bold;
         }
         .main {
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            height: 100%;
         }
-        .popup {
-            color: black;
-            display: none;
-            border-radius: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            padding: 5px;
-            background-color: #ffffff;
+        .heading{
+            text-align: center;
+            color: slategray;
         }
-        .popup h1 {
-            margin-top: 0;
+        .list{
+            line-height: 25px;
         }
         .button {
-            font-family: "Open Sans", sans-serif;
             font-size: 16px;
             letter-spacing: 2px;
             text-decoration: none;
             text-transform: uppercase;
-            color: #000;
+            color: slategray;
             cursor: pointer;
             border: 3px solid;
             padding: 0.25em 0.5em;
@@ -53,18 +52,18 @@
         }
 
         .button:active {
-        box-shadow: 0px 0px 0px 0px;
-        top: 5px;
-        left: 5px;
+            box-shadow: 0px 0px 0px 0px;
+            top: 5px;
+            left: 5px;
         } 
     </style>
 </head>
 <body >
     <div class="love">
         <div class="main">
-            <h1>Lessons from the life of an amazing girlfriend Ms.Mani</h1>
-        <p>Saying the below words to your boyfriend, could improve your relationship and are a hell lot a sexier!!!!</p>
-        <ul>
+            <h1 class="heading">Lessons from the life of an amazing girlfriend Ms.Mani</h1>
+            <p>Saying the below words to your boyfriend, could improve your relationship and are a hell lot a sexier!!!!</p>
+        <ul class="list">
             <li>Awesome da</li>
             <li>Seri da</li>
             <li>Ahem Ahem</li>
@@ -75,26 +74,11 @@
             <li>Hmm (This one makes him fall badly for you)</li>
         </ul>
         <button class="button" onclick="showPopup()">Eruma rasichathu pothum mooditu ithe click pannu</button>
-        <div id="popup1" class="popup" style="left:60%;">
-            I really really love u baby
-            <!-- <button onclick="hidePopup()">Close</button> -->
-        </div>
-        <div id="popup2" class="popup" style="left:22%;top:58%;">
-            Ahem! Ahem!
-            <!-- <button onclick="hidePopup()">Close</button> -->
-        </div>
-        <div id="popup3" class="popup" style="left:60%;top:65%;">
-            Hate u fucking Bitch. Go Die!!
-            <!-- <button onclick="hidePopup()">Close</button> -->
-        </div>
         </div> 
     </div>
     <script>
         function showPopup() {
-            document.getElementById("popup1").style.display = "block";
-            document.getElementById("popup2").style.display = "block";
-            document.getElementById("popup3").style.display = "block";
-            alert("Yarathu enna kapathungala :(")
+            alert("கண்கள் திறக்கும் வரை தான் கனவு நீடிக்கும்..ஆனால் என் கண்கள் மூடும் வரை என் காதல் நீடிக்கும்.\n\n Mayirula! Etho konchondu i love u. Avlodan(dot)!!")
         }
     </script>
 </body>
