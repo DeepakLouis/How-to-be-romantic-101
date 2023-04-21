@@ -9,6 +9,7 @@
         html, body {
             height: 100%;
         }
+
         .love {
             background-image: url(images/love.jpg);
             background-position: center;
@@ -20,6 +21,7 @@
             justify-content: center;
             font-weight: bold;
         }
+
         .main {
             color: white;
             display: flex;
@@ -29,13 +31,16 @@
             height: 100%;
             padding: 10px;
         }
+
         .heading{
             text-align: center;
             color: slategray;
         }
+
         .list{
             line-height: 25px;
         }
+
         .button {
             font-size: 16px;
             letter-spacing: 2px;
@@ -57,6 +62,16 @@
             top: 5px;
             left: 5px;
         } 
+
+        .hide {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+        }
+
+        .show {
+            display: block;
+        }
     </style>
 </head>
 <body >
@@ -68,18 +83,23 @@
                 <li>Awesome da</li>
                 <li>Seri da</li>
                 <li>Ahem Ahem</li>
-                <li>U should</li>
+                <li onclick="show()">U should</li>
                 <li>Okay Cool</li>
                 <li>Chi</li>
                 <li>Yuk</li>
                 <li>Hmm (This one makes him fall badly for you)</li>
             </ul>
             <button class="button" onclick="showPopup()">Eruma rasichathu pothum mooditu ithe click pannu</button>
+            <div id="hide" class="hide">P.S : Code kamida nu kepa. Suthula kamipen. Fuck u!!. I know you & fucking love u</div>
         </div> 
     </div>
     <script>
         function showPopup() {
             alert("கண்கள் திறக்கும் வரை தான் கனவு நீடிக்கும்..ஆனால் என் கண்கள் மூடும் வரை என் காதல் நீடிக்கும்.\n\n Mayirula! Etho konchondu i love u. Avlodan(dot)!!")
+        }
+
+        function show() {
+            document.getElementById("hide").classList.add("show");
         }
     </script>
 </body>
