@@ -5,74 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to be romantic 101</title>
-    <style>
-        html, body {
-            height: 100%;
-        }
-
-        .love {
-            background-image: url(images/love.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
-            display: flex;
-            font-family: "Open Sans", sans-serif;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .main {
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            padding: 10px;
-        }
-
-        .heading{
-            text-align: center;
-            color: slategray;
-        }
-
-        .list{
-            line-height: 25px;
-        }
-
-        .button {
-            font-size: 16px;
-            letter-spacing: 2px;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: slategray;
-            cursor: pointer;
-            border: 3px solid;
-            padding: 0.25em 0.5em;
-            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-            position: relative;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-        }
-
-        .button:active {
-            box-shadow: 0px 0px 0px 0px;
-            top: 5px;
-            left: 5px;
-        } 
-
-        .hide {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-        }
-
-        .show {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body >
     <div class="love">
@@ -83,24 +16,21 @@
                 <li>Awesome da</li>
                 <li>Seri da</li>
                 <li>Ahem Ahem</li>
-                <li onclick="show()">U should</li>
+                <li onclick="showPopup()">U should</li>
                 <li>Okay Cool</li>
                 <li>Chi</li>
                 <li>Yuk</li>
                 <li>Hmm (This one makes him fall badly for you)</li>
             </ul>
-            <button class="button" onclick="showPopup()">Eruma rasichathu pothum mooditu ithe click pannu</button>
-            <div id="hide" class="hide">P.S : Code kamida nu kepa. Suthula kamipen. Fuck u!!. I know you & fucking love u</div>
+            <button class="button" onclick="showAlert()">Eruma rasichathu pothum mooditu ithe click pannu</button>
+            <div id="hidden" class="popup">
+                <div>Code kamida nu kandipa kepa. But suthula kamipen :).</div>
+                <div style="margin-top: 10px;">*I feel you will ask and hope u ask cause that's the girl i am in love with and this is the guy you are in love with.*</div>
+                <button onclick="hidePopup()">Close</button>
+            </div>
+            <div id="hide" class="hide"></div>
         </div> 
     </div>
-    <script>
-        function showPopup() {
-            alert("கண்கள் திறக்கும் வரை தான் கனவு நீடிக்கும்..ஆனால் என் கண்கள் மூடும் வரை என் காதல் நீடிக்கும்.\n\n Mayirula! Etho konchondu i love u. Avlodan(dot)!!")
-        }
-
-        function show() {
-            document.getElementById("hide").classList.add("show");
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

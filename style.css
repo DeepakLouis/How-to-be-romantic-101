@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+}
+
+.love {
+    background-image: url(images/love.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.heading{
+    text-align: center;
+    color: slategray;
+}
+
+.list{
+    line-height: 25px;
+}
+
+.button {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: slategray;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+} 
+
+.popup {
+    display: none;
+    color: lightslategray;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-shadow: 5px 5px 5px lightblue;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup button {
+    margin-top: 15px;
+    padding: 7px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 102px;
+}
